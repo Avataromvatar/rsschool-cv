@@ -4,23 +4,212 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style/style.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
 
 </head>
 
+
 <body>
-    ...<img alt='AAASASASA'> <br />
-    1<p style="color:green;flex-basis: 200px; width: 400px;">Test1</p>
-    <p>Test2 2</p>
-    <br />
-    <ol style="font-size: 24px;">
+    <header class="page-header">
+        <img class="hero" src="images/token.png" alt="Pankratov Aleksandr">
+        <!-- <div class="hero"></div> -->
+        <div class="title-info">
+            <h1>Pankratov Aleksandr</h1>
+            <span>Born at 12.02.1983 in Izhevsk city, Russia.</span>
+            <h3>Embended developer, fullstack developer</h3>
+            <section>
+                <div class="flex-column">
+                    <div>
+                        <ul class="inline-flex-row icons">
+                            <li class="tel">
+                                +79225052806
+                            </li>
+                            <li class="mail">
+                                avataromvatar@gmail.com
+                            </li>
+                            <li class="telegram">
+                                @avataromvatar
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </section>
+            <nav class="flex-column">
+                <ul class="inline-flex-row icons">
+                    <li>
+                        <a href="#About">About</a>
+                    </li>
+                    <li>
+                        <a href="#Skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#Technologies">Technologies</a>
+                    </li>
+                    <li>
+                        <a href="#Code">Code</a>
+                    </li>
+                    <li>
+                        <a href="#Education">Education</a>
+                    </li>
+                    <li>
+                        <a href="#Languages">Languages</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
 
-        <li style="position: relative; top: 50px;">1</li>
-        <li>2</li>
-    </ol>
-    <div style="background-color: red; width: 200px;">DIV<div style="background-color: green;">DIV1</div>
-    </div>
+    </header>
+    <main>
+        <br />
+        <section class="backround-main">
+            <div class="margin-auto">
+                <a name="About"></a>
+                <div class="flex-column ">
+                    <h2 class="text-align-center">About myself</h2>
+                    <p class="text-align-left">Husband and father of two girls aged 15 and 18. Curious, sociable,
+                        teachable
+                        and self-taught.<br />
+                        I have passed an interesting life path from a plumber to a software developer, family and
+                        women's
+                        wardrobe are very
+                        motivating for growth.<br />
+                        Love DnD, Traveler and other board role-playing games. Love create a Worlds, story and
+                        game.<br />
+                        Now I want to strengthen my skills in JS, Dart, Backend or maybe go to gamedev.</p>
+                </div>
+            </div>
+        </section>
+        <br />
+        <section class="backround-main">
+            <a name="Skills"></a>
+            <div class="flex-column">
+                <h2 class="text-align-center">Skills and Experience</h2>
+                <ul>
+                    <li>
+                        5 years in C/C++ software development for domestic and imported microcontrollers (1986BE92,
+                        1986BE1, STM32)
+                    </li>
+                    <li>
+                        10 years in the development of PLC programs in LD, FBD, ST, C/C++, Lua
+                    </li>
+                    <li>
+                        software development in C/C++ (Qt, boost, asio), Dart/Flutter, JavaScript
+                    </li>
+                    <li>
+                        development of various devices based on microcontrollers for solving tasks on automated control
+                        systems and robotics
+                    </li>
+                    <li>
+                        management of a small project team (4 people) according to the Agile methodology
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <br />
+        <section class="backround-main">
+            <a name="Technologies"></a>
+            <div class="flex-column">
+                <h2 class="text-align-center">Used technologies and available knowledge</h2>
+                <ul>
+                    <li>
+                        <b>Programming languages:</b><br />
+                        C, C++, Dart, JavaScript, LD, FBD, ST, Script, Lua
+                    </li>
+                    <li>
+                        <b>Libraries and frameworks:</b><br />
+                        Rx Data, Block, Radius, Have, SQLite, stl, thread, Qt, boost.asio, Protothread, MQT, jQuery,
+                        NodeJS, websockets.
+                    </li>
+                    <li>
+                        <b>Web:</b><br />
+                        HTML5,CSS, JavaScript, RestApi, FastCGI, RPC-Json
+                    </li>
+                    <li>
+                        <b>Version control system:</b><br />
+                        Git
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <br />
+        <section class="backround-main">
+            <a name="Code"></a>
+            <div class="flex-column">
+                <h2 class="text-align-center">Code example</h2>
+                <p>Implement the function which takes an array containing the names of people that like an item. It must
+                    return the display
+                    text as shown in the examples:</p>
+                <code>
+                    [] --> "no one likes this"<br />
+                    ["Peter"] --> "Peter likes this"<br />
+                    ["Jacob", "Alex"] --> "Jacob and Alex like this"<br />
+                    ["Max", "John", "Mark"] --> "Max, John and Mark like this"<br />
+                    ["Alex", "Jacob", "Mark", "Max"] --> "Alex, Jacob and 2 others like this"<br /></code>
+                <p>Code:</p>
+                <code>
+function likes(names) {<br />
+
+if (names instanceof Array && names.length != 0) {<br />
+if (names.length >= 4) {<br />
+return `${names[0]}, ${names[1]} and ${names.length - 2} others like this`;<br />
+}<br />
+else<br />
+if (names.length == 3)<br />
+return `${names[0]}, ${names[1]} and ${names[2]} like this`;<br />
+else<br />
+if (names.length == 2)<br />
+return `${names[0]} and ${names[1]} like this`;<br />
+else<br />
+return `${names[0]} likes this`;<br />
+}<br />
+return "no one likes this";<br />
+}<br />
+                </code>
+            </div>
+        </section>
+        <br />
+        <section class="backround-main">
+            <a name="Education"></a>
+            <div class="flex-column">
+                <h2 class="text-align-center">Education:</h2>
+                <b>
+                    2002 years: БПОУ УР «ИМТ» - СТУЗ
+                </b>
+            </div>
+        </section>
+        <br />
+        <section class="backround-main">
+            <a name="Languages"></a>
+            <div class="flex-column">
+                <h2 class="text-align-center">Languages:</h2>
+                <ul>
+                    <li>
+                        <b>Russian</b> - Native
+                    </li>
+                    <li>
+                        <b>English</b> - B1
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-author">
+            <h3>Made by <a href="https://github.com/Avataromvatar">avataromvatar</a> in 2022</h3>
+        </div>
+        <div class="footer-rs-school">
+            <a href="https://rs.school/js-stage0/">
+                <img src="images/rs_school_js.svg" alt="RS Shool JS">
+            </a>
+        </div>
+
+    </footer>
+
 </body>
 
 </html>

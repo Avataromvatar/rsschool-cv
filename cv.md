@@ -4,9 +4,11 @@
 **E-mail:** avataromvatar@gmail.com  
 **Telegram:** @avataromvatar  
 ## About myself:
+**Born:** 12.02.1983 Russia Izhevsk  
 Husband and father of two girls aged 15 and 18. Curious, sociable, teachable and self-taught.  
 I have passed an interesting life path from a plumber to a software developer, family and women's wardrobe are very motivating for growth.  
-Now I want to strengthen my skills in JS, Dart, Backend.
+Love DnD, Traveler and other board role-playing games. Love create a Worlds, story and game.  
+Now I want to strengthen my skills in JS, Dart, Backend or maybe go to gamedev.
 ## Skills and Proficiency:
 - 5 years in C/C++ software development for domestic and imported microcontrollers (1986BE92, 1986BE1, STM32);
 - 10 years in the development of PLC programs in LD, FBD, ST, C/C++, Lua;
